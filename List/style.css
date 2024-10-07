@@ -1,0 +1,24 @@
+body {
+    padding-left: 100px;
+}
+
+ul,
+ol {
+    list-style-type: circle;
+    list-style-position: outside;
+    /*inside*/
+    margin: 0;
+    padding: 0;
+}
+
+ul.sayac {
+    counter-reset: sayac1;
+}
+
+ul.sayac li {
+    counter-increment: sayac1 2;
+}
+
+ul.sayac li::before {
+    content: counter(sayac1)" ) ";
+}

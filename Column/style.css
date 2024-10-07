@@ -1,0 +1,15 @@
+.text {
+    /* column-count: 4;*/
+    /*column-width: 300px;*/
+    columns: 4 200px;
+    /*  column-rule-style: dotted;
+    column-rule-color: purple;
+    column-rule-width: 8px;*/
+    column-rule: dotted purple 8px;
+    column-gap: 40px;
+    line-height: 150%;
+}
+
+.text h3 {
+    column-span: all;
+}

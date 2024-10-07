@@ -1,0 +1,85 @@
+/* overflow taşanları gizle scroll, hidden, auto*/
+
+/*.box {
+    width: 75px;
+    height: 100px;
+    border: 1px solid #ddd;
+    overflow: auto;
+    
+}
+
+.box ::-webkit-scrollbar {
+    background: red;
+}
+
+.box ::-webkit-scrollbar-corner {
+    background: red;
+}
+
+.box ::-webkit-scrollbar-thumb {
+    background: white;
+}
+*/
+
+
+html,
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    /*akıcı şekilde kaymasını sağlar*/
+}
+
+body {
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+section {
+    scroll-margin-top: 50px;
+    height: calc(100vh - 50px);
+}
+
+#home {
+    background-color: rgb(179, 218, 214);
+}
+
+#about {
+    background-color: rgb(137, 161, 184);
+}
+
+#blog {
+    background-color: rgb(103, 139, 156);
+}
+
+#contact {
+    background-color: rgb(74, 107, 145);
+}
+
+.top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    line-height: 50px;
+    padding: 0 20px;
+    background: #000;
+    color: #fff;
+}

@@ -1,0 +1,17 @@
+span {
+    width: 200px;
+    height: 200px;
+    display: inline;
+    /* visibility: hidden;*/
+    background-color: aquamarine;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    display: block;
+    background-color: aqua;
+    /*display: flex =>yan yana
+    display: grid =>alt altaçizgili
+    */
+}

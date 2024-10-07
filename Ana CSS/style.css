@@ -1,0 +1,170 @@
+/*
+.box1 {
+    background-color: lime;
+    width: min-content;
+}
+
+.box2 {
+    background-color: tomato;
+    width: max-content;
+    writing-mode: vertical-lr;
+}
+*/
+.box3 {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    padding: 50px 100px 30px 50px;
+    /* iki tane kullanırsak ilki yukarı aşağı, ikinci sağ sol*/
+    /*3 tane kullanırsak ilki yukarıda ikinci sağ sol üçüncü aşağıdan*/
+    /*ilk yukarı ikinci sağ üçüncü aşağı dördüncü sol*/
+    /* padding-top: 50px;
+    üst boşluk
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px; */
+
+
+    /* margin-top: 50px;
+    dış boşluk*/
+}
+
+/* solid: tek çizgi
+    dotted: nokto nokta
+    dashed: çizgi çizgi
+    double: iki çizgi
+*/
+
+/* div {
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    margin: 5px auto;
+    border: 25px solid tomato;
+    border-style: dashed;
+    /* border-width: thin;*/
+/* border-color: transparent;*/
+/*outline-style: dashed;
+    outline-width: 10px;
+    margin: 50px;
+    outline-color: green;*/
+/* outline: dashed 10px green;
+    outline-offset: 10px;
+} */
+
+.box4 {
+    width: 300px;
+    height: 300px;
+    border: 10px double black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 30px;
+}
+
+.box5 {
+    width: 300px;
+    height: 300px;
+    border: 10px double black;
+    border-top-left-radius: 50px 100px
+}
+
+.box6 {
+    width: 300px;
+    height: 300px;
+    border: 10px double black;
+    border-radius: 50px 100px 65px 30px;
+}
+
+img {
+    border-radius: 50%;
+    /*resmi yuvarlak hale getiriyor*/
+}
+
+p {
+    color: hsl(202, 69%, 52%);
+    font-family: Arial;
+    font-size: xx-large;
+    /*1em = 16px*/
+    font-style: oblique;
+    font-weight: bolder;
+    line-height: 1.6;
+    /*okunaklığı belirtir*/
+}
+
+p span {
+    font-variant: small-caps;
+    /*büyük yazar ama yanındaki yazının boyutuyla*/
+}
+
+p1 {
+    font: italic bold small-caps 30px/1.7 Arial, sans-serif;
+    text-align: justify;
+    text-align-last: right;
+
+    text-indent: 15px;
+    /*paragraf girintisi*/
+}
+
+p3 {
+    letter-spacing: 16px;
+    /*harfler arası boşluk*/
+    word-spacing: 5px;
+    /*kelimeler arası boşluk*/
+    /* underline = altını çizer
+        overline = üstünü çizer
+        line-through = yazının ortasını çizer
+    */
+    /* text-decoration-line: underline overline;
+    text-decoration-color: limegreen;
+    text-decoration-style: wavy;
+    */
+
+    text-decoration: underline overline limegreen wavy;
+
+
+}
+
+p4 {
+    text-indent: 15px;
+    /*paragraf girintisi*/
+    white-space: pre-wrap;
+    /*nowrap = br görünce alt satıra geçer
+    pre aynı yazılan özelliği korur
+    */
+    text-transform: capitalize;
+    /*her kelimenin baş harfini büyük yazar*/
+}
+
+/*çalışmadı*/
+p5 {
+    width: 50px;
+    border: 3px solid lightcoral;
+}
+
+p5:first-child {
+    hyphens: auto;
+}
+
+p5:last-child {
+    word-break: break-all;
+    /* overflow-wrap: break-word;*/
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    /*text-shadow: yatay dikey bulanıklık renk;*/
+    text-shadow: 0 0 10px red;
+}
+
+/* background-repeat: norepeat => tekrar etme
+                      repeat-x => x ekseninde tekrar et
+    background-position: top;
+    background-clip: padding-box veya content-box
+    background-origin:content-box => nereden başlaması gerektiğini belirtir
+    background-size:cover =>tam otursun dye
+    background-attachment: fixed; resmin kaymasını düzenler
+*/

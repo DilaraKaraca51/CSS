@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#">merhaba dünya</a>
+    <div>div <span>span etiketi</span> burası</div>
+    <button type="button"> Üzerime gel liste gizlesin</button>
+    <ul>
+        <li>liste1</li>
+        <li>liste2</li>
+        <li>liste3</li>
+    </ul>
+    <p>Bu bir paragraftır</p>
+    <a href="https://prtototurk.com" class="url">PROTOTURK</a>
+
+    <br><br><br>
+
+    <!--CHECKED-->
+    <label>
+        <input type="radio" name="cinsiyet" value="kadin">
+        <span>KADIN</span>
+    </label>
+    <label>
+        <input type="radio" name="cinsiyet" value="erkek">
+        <span>ERKEK</span>
+    </label><br>
+
+    <input type="checkbox" id="cb" class="checkbox">
+    <label class="button" for="cb" data-show="Göster" data-hide="Gizle"></label>
+    <div class="box">Burası gizlenen bir alandır</div>
+
+
+    <!--FOCUS-->
+    <button>buton</button>
+    <input type="text">
+    <a href="#">Merhaba</a>
+    <div tabindex="0">divde focus etki etmez tabindex kullanınca etki eder</div>
+
+
+    <!-- :only-child-->
+    <ul>
+        <li>tek liste</li>
+    </ul>
+    <ul>
+        <li>çok liste</li>
+        <li>çok liste</li>
+    </ul>
+
+    <!-- :only-of-type  -->
+    <div class="box">
+        <em>em etiketi</em>
+        <div>div etiketi</div>
+    </div>
+
+    <!--   :not   -->
+    <abbr title="title">title</abbr>
+    <abbr class="test">title</abbr>
+    <abbr id="test">title</abbr>
+    <abbr>title</abbr>
+
+    <!--   :empty   -->
+    <ul>
+        <li>1</li>
+        <li></li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <div id="total"><!--1 yaz dene--></div>
+    <div class="loading-text">Yükleniyor...</div>
+
+
+    <!-- :valid    -->
+    <input type="text" minlength="3" required><br><br>
+
+    <!------------------>
+    <input type="text" class="input1">
+    <input type="text" class="input1" disabled>
+    <hr>
+    <input type="text" class="input2">
+    <input type="text" class="input2" required>
+    <hr>
+    <input type="text" class="input3">
+    <input type="text" class="input3" read-only>
+    <hr>
+    <!------------------------->
+    <a href="#" class="link1">1. Link</a>
+    <a href="https://prototurk.com" class="link2">prototurk.com</a>
+    <a href="https://tayfun.net" class="link2">tayfun.net</a>
+    <a href="https://bilmemne.net" class="link2">bilmemne.net</a>
+    <a>google</a>
+    <br><br>
+
+
+
+    <!----     :target        -->
+    <a href="#paragraf1">1 e atla</a>
+    <a href="#paragraf2">2 ye atla</a>
+    <a href="#paragraf10">10 a atla</a>
+
+    <p id="paragraf1">paragraf1</p>
+    <p id="paragraf2">prgrf2</p>
+    <p id="paragraf3">prgrf3</p>
+    <p id="paragraf4">prgrf4</p>
+    <p id="paragraf5">prgrf5</p>
+    <p id="paragraf6">prgrf6</p>
+    <p id="paragraf7">prgrf7</p>
+    <p id="paragraf8">prgrf8</p>
+    <p id="paragraf9">prgrf9</p>
+    <p id="paragraf10">prgrf10</p>
+
+    <!--------------------------->
+
+    <input type="number" min="3" max="9" value="13">
+</body>
+
+</html>

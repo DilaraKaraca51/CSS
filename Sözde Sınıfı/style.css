@@ -1,0 +1,70 @@
+/*div {
+    background-color: yellow;
+}*/
+
+.box::after {
+    content: ' css de yazılan after ';
+    color: blue;
+}
+
+.box::before {
+    content: 'css de yazılan before';
+    color: blue;
+}
+
+
+/*p::first-letter {
+    color: red;
+}*/
+
+/*p::first-line {
+    color: yellowgreen;
+}*/
+
+::selection {
+    color: pink;
+}
+
+input {
+    color: red;
+}
+
+input::placeholder {
+    color: red;
+}
+
+textarea {
+    color: blue;
+}
+
+textarea::placeholder {
+    color: blue;
+}
+
+/*div:first-of-type {
+    background-color: yellow;
+}*/
+
+/*div:last-of-type {
+    background-color: yellow;
+}
+*/
+ul li:nth-child(2) {
+    /*odd yazarsam tekli sayıları getirir even çift 3n yazsak 3er 3er atlarak */
+    background-color: lime;
+}
+
+
+div:nth-of-type(2) {
+    background-color: blueviolet;
+}
+
+ul li:nth-last-child(3) {
+    /*sondan 3. getirir*/
+    background-color: blueviolet;
+}
+
+div:nth-last-of-type(1) {
+    /*en sondan 1. getirir*/
+    background-color: lime;
+}

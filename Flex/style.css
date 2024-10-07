@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 70px;
+    background: #ccc;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.box {
+    width: 50px;
+    background: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: #eee;
+}
+
+.sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    background: #ccc;
+}
+
+.content {
+    flex-grow: 1;
+    height: calc(100% - 140px);
+    overflow: auto;
+}
+
+.footer {
+    height: 70px;
+    background: #bbb;
+    width: 100%;
+}

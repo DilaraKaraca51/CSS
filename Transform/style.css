@@ -1,0 +1,168 @@
+/*
+rotate() --- 2 boyutlu bir alanda etiketleri döndürmek için kullanılıyor. Ek olarak rotateX() ve rotateY() adında 2 farklı kullanımı daha var.
+
+skew() --- 2 boyutlu bir alanda etiketleri eğmek için kullanılıyor. Ek olarak skewX() ve skewY() adında 2 farklı kullanımı daha var.
+
+scale() --- 2 boyutlu bir alanda etiketleri ölçeklendirmek için kullanılıyor. Ek olarak scaleX() ve scaleY() adında 2 farklı kullanımı daha var.
+
+translate() --- 2 boyutlu bir alanda etiketleri taşımak için kullanılıyor. Ek olarak translateX() ve translateY() adında 2 farklı kullanımı daha var.
+
+matrix() --- Uukarıdaki 4 özelliğin kısa kullanımıdır.
+
+transform-origin --- merkezi ayarlamak için kullanılıyor.
+
+*/
+
+
+/*.box {
+    width: 250px;
+    height: 250px;
+    background-color: lightblue;
+    transition: 1s transform;
+}
+
+#checkbox:checked+.box {
+    transform: rotateY(180deg);
+}*/
+
+
+
+
+/*.box1 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 800px;
+}
+
+.box1 .front,
+.box1 .back {
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 1s transform;
+}
+
+.box1 .front {
+    background-color: lightcoral;
+}
+
+.box1 .back {
+    background-color: lightblue;
+    transform: rotateX(-180deg);
+}
+
+.box1:hover .front {
+    transform: rotateX(180deg);
+}
+
+.box1:hover .back {
+    transform: rotateX(0);
+}*/
+
+
+
+
+
+
+/*.skew-box {
+    width: 250px;
+    height: 250px;
+    background: purple;
+    transition: 1s transform;
+}
+
+#checkbox:checked+.skew-box {
+    transform: skewX(90deg);
+}
+*/
+
+
+
+
+/*.button {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #ccc;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    transition: 1s left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -101%;
+    z-index: -1;
+    background-color: lime;
+    transform: skew(10deg);
+}
+
+.button:hover::before {
+    left: 0;
+}
+
+*/
+
+
+
+
+/*.scale-box {
+    width: 250px;
+    height: 250px;
+    background: rgb(173, 92, 142);
+    transition: 300ms transform;
+}
+
+.scale-box:hover {
+    transform: scale(1.1);
+}
+
+.scale-box:nth-of-type(3) {
+    background-color: rgb(155, 5, 62);
+}
+
+*/
+
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font: bold 16px Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: #000;
+    height: 100%;
+    transition: 300ms right;
+    transform: translateX(100%);
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 0;
+}
+
+
+#checkbox:checked+.menu {
+    transform: translateX(0);
+}

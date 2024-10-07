@@ -1,0 +1,112 @@
+@import url(test.css);
+
+body {
+    background-color: papayawhip;
+}
+
+h3 {
+    color: green;
+}
+
+h3#title {
+    color: white;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+p.color-blue.text-bold#paragraf2 {
+    color: brown;
+    font-size: 25px;
+}
+
+/*
+*{
+    Bu evrensel seçicidir. tüm etiketleri alır
+}
+*/
+
+div * {
+    color: rgb(195, 0, 255);
+}
+
+p strong {
+    color: chartreuse;
+}
+
+p1>strong {
+    font-size: 50px;
+}
+
+p2>i {
+    color: aqua;
+    /*çocuk seçicidir etkilemez çünkü span etiketi var sonra*/
+}
+
+h1+p {
+    /* h1 başlığından sonra gelen paragrafı seç*/
+    color: mediumturquoise;
+}
+
+div+p span {
+    color: slateblue;
+}
+
+.box+p span {
+    /* üstteki ile aynı işlevde*/
+    color: slateblue;
+}
+
+ul li.list~li {
+    /* list clasından sonraki gelen hepsinin rengini kırmızı yapar işaret önemli*/
+    color: red;
+}
+
+abbr[title] {
+    color: green;
+}
+
+a[target="_blank"] {
+    /* [nitelik="değer seçici"]*/
+    color: orangered;
+}
+
+img[alt~="maskot"] {
+    /*maskot kelimesi geçenin içini pembe yapar*/
+    color: rgb(255, 0, 157);
+}
+
+/*bitişik lduğundan seçmiyor*/
+/*div[class|="box"] {
+    color: yellow;
+}
+*/
+
+
+/*3.divi de alıyor*/
+/*div[class^="box"] {
+ 
+    color: yellow;
+}
+
+
+/*sonu box ile biten kelimeleri alıyor*/
+/*
+div[class$="box"] {
+  
+    color: yellow;
+}
+*/
+
+/*içinde big kelimesi geçenlere bakıyor*/
+div[class*="big"
+
+/*i harfi koyarsak buraya büyük küçük harf duyarlılığını kaldırır*/
+] {
+    color: yellow;
+}

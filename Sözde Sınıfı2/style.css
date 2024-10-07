@@ -1,0 +1,173 @@
+/*a:hover {
+    background-color: red;
+}*/
+
+div:hover {
+    background-color: blueviolet;
+}
+
+div span:hover {
+    background-color: purple;
+}
+
+/*ul :hover {
+    background-color: chartreuse;
+}*/
+
+button:hover+ul {
+    display: none;
+}
+
+/*p::selection {
+    background-color: coral;
+}*/
+
+/*p:hover::selection {
+    background-color: red;
+}*/
+
+.url::after {
+    content: ' (' attr(href) ')'
+}
+
+.url:hover::after {
+    display: none;
+}
+
+/*input[type="radio"]:checked+span {
+    color: red;
+}*/
+
+/*.checkbox:checked+.box {
+    display: none;
+}*/
+
+.button::before {
+    content: attr(data-hide);
+}
+
+.checkbox:checked+.button::before {
+    content: attr(data-show);
+}
+
+.checkbox:checked+.button+.box {
+    display: none;
+}
+
+:focus {
+    outline: none;
+}
+
+button:focus {
+    background-color: gray;
+}
+
+/*input:focus {
+    border-color: red;
+    color: red;
+}*/
+
+/*a:focus {
+    background-color: yellow;
+}*/
+
+div:focus {
+    background-color: yellow;
+}
+
+li:only-child {
+    background-color: blue;
+}
+
+.box div:only-of-type {
+    background-color: brown;
+}
+
+abbr[title] {
+    background-color: orange;
+}
+
+abbr:not([title]):not(.test):not(#test) {
+    background-color: palevioletred;
+}
+
+li:empty {
+    display: none;
+}
+
+#total:empty {
+    display: none;
+}
+
+#total:not(:empty)+.loading-text {
+    display: none;
+}
+
+input:invalid {
+    border-color: tomato;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.input1:enabled {
+    background-color: rgb(252, 252, 4);
+}
+
+.input1:disabled {
+    background-color: rgb(2, 253, 2);
+}
+
+.input2:optional {
+    background-color: rgb(252, 252, 4);
+}
+
+.input2:required {
+    background-color: rgb(252, 252, 4);
+}
+
+.input3:read-only {
+    background-color: gray;
+}
+
+.input3:read-write {
+    background-color: gray;
+}
+
+.link1:active {
+    background-color: rgb(56, 56, 100);
+}
+
+.link2:link {
+    color: tomato;
+    /*ziyaret edilmeyen siteler*/
+}
+
+.link2:visited {
+    color: gray;
+    /*ziyaret edilen*/
+}
+
+/*a:any-link {
+    background-color: red;*/
+/*link olanı seçer*/
+/*}*/
+
+p:target {
+    background-color: yellow;
+}
+
+input:in-range {
+    background-color: green;
+    color: white;
+}
+
+input:out-of-range {
+    background-color: red;
+    color: white;
+}
+
+:root {
+    background-color: magenta;
+}

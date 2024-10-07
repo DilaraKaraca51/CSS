@@ -1,0 +1,122 @@
+/*.test {
+    position: absolute;
+}*/
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: #ccc;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+}
+
+.container div:nth-child(1) {
+    background-color: salmon;
+    position: relative;
+    z-index: 1;
+}
+
+.container div:nth-child(2) {
+    background-color: rgb(111, 119, 165);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+}
+
+.container div:nth-child(3) {
+    background-color: rgb(51, 94, 79);
+    position: relative;
+    z-index: 2;
+}
+
+a.up {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+}
+
+.page h3 {
+    font: bold 40px arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-color: tomato;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.page .text {
+    height: 800px;
+}
+
+
+
+
+.checkbox {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    /*imleci değişiyor*/
+    transition: 500ms background-color;
+}
+
+.checkbox .check-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: tomato;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 500ms left, 500ms background-color;
+}
+
+label input:checked+.checkbox {
+    background-color: tomato;
+}
+
+label input:checked+.checkbox .check-btn {
+    left: 65px;
+    background-color: #fff;
+}
+
+label input {
+    display: none;
+}
+
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .7);
+    z-index: 90;
+}
+
+.popup .popup-inner {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+}
